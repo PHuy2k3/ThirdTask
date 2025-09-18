@@ -1,0 +1,18 @@
+:root{
+  --app-max: 1240px;
+}
+body{
+  background: radial-gradient(1200px 600px at 20% -10%, #e9f0ff 0%, transparent 60%),
+              radial-gradient(900px 500px at 110% 10%, #e7fff5 0%, transparent 60%),
+              linear-gradient(180deg, #ffffff, #f7f9fc 20%, #f3f6fb 100%);
+}
+.app-shell{ max-width: var(--app-max); margin: 0 auto; padding: 1rem; }
+.card-rounded{ border-radius: 1rem; }
+.shadow-soft{ box-shadow: 0 6px 24px rgba(0,0,0,.06); }
+.sticky-header{ position: sticky; top: 0; z-index: 5; }
+
+/* SpeedDial vị trí cố định */
+.speeddial-fixed{ position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 10; }
+
+/* DataTable tinh chỉnh nhỏ */
+.p-datatable .p-datatable-header{ background: transparent; border: 0; padding: .5rem 0 1rem; }
