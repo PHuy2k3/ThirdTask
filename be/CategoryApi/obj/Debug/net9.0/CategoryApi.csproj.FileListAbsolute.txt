@@ -1,0 +1,11 @@
+D:\CMC_Task\third-task\be\CategoryApi\bin\Debug\net9.0\CategoryApi.deps.json
+D:\CMC_Task\third-task\be\CategoryApi\bin\Debug\net9.0\CategoryApi.dll
+D:\CMC_Task\third-task\be\CategoryApi\bin\Debug\net9.0\CategoryApi.pdb
+D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\CategoryApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\CategoryApi.AssemblyInfoInputs.cache
+D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\CategoryApi.AssemblyInfo.cs
+D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\CategoryApi.csproj.CoreCompileInputs.cache
+D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\CategoryApi.dll
+D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\refint\CategoryApi.dll
+D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\CategoryApi.pdb
+D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\ref\CategoryApi.dll

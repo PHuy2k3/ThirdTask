@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="Common\**" />
+	  <EmbeddedResource Remove="Common\**" />
+	  <None Remove="Common\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\\CategoryApi\\CategoryApi.csproj" />
+	</ItemGroup>
+</Project>

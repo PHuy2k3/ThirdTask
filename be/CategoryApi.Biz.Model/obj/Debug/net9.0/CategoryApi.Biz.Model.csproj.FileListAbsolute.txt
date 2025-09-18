@@ -1,0 +1,15 @@
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\bin\Debug\net9.0\CategoryApi.Biz.Model.deps.json
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\bin\Debug\net9.0\CategoryApi.Biz.Model.dll
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\bin\Debug\net9.0\CategoryApi.Biz.Model.pdb
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\bin\Debug\net9.0\CategoryApi.dll
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\bin\Debug\net9.0\CategoryApi.pdb
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz.Model.csproj.AssemblyReference.cache
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz.Model.AssemblyInfoInputs.cache
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz.Model.AssemblyInfo.cs
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz.Model.csproj.CoreCompileInputs.cache
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\Category.69219C9E.Up2Date
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz.Model.dll
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\refint\CategoryApi.Biz.Model.dll
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz.Model.pdb
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\ref\CategoryApi.Biz.Model.dll
