@@ -13,3 +13,4 @@ D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz
 D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\refint\CategoryApi.Biz.Model.dll
 D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz.Model.pdb
 D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\ref\CategoryApi.Biz.Model.dll
+D:\CMC_Task\third-task\be\CategoryApi.Biz.Model\obj\Debug\net9.0\CategoryApi.Biz.Model.sourcelink.json

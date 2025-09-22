@@ -9,3 +9,4 @@ D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\CategoryApi.dll
 D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\refint\CategoryApi.dll
 D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\CategoryApi.pdb
 D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\ref\CategoryApi.dll
+D:\CMC_Task\third-task\be\CategoryApi\obj\Debug\net9.0\CategoryApi.sourcelink.json

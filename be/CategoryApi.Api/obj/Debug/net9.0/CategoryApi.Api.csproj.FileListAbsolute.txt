@@ -85,3 +85,4 @@ D:\CMC_Task\third-task\be\CategoryApi.Api\obj\Debug\net9.0\refint\CategoryApi.Ap
 D:\CMC_Task\third-task\be\CategoryApi.Api\obj\Debug\net9.0\CategoryApi.Api.pdb
 D:\CMC_Task\third-task\be\CategoryApi.Api\obj\Debug\net9.0\CategoryApi.Api.genruntimeconfig.cache
 D:\CMC_Task\third-task\be\CategoryApi.Api\obj\Debug\net9.0\ref\CategoryApi.Api.dll
+D:\CMC_Task\third-task\be\CategoryApi.Api\obj\Debug\net9.0\CategoryApi.Api.sourcelink.json

@@ -2,16 +2,14 @@
 using CategoryApi.Biz.Model.Catalogs;
 using CategoryApi.Data;
 using CategoryApi.Data.Model.Entities;
-using CategoryApi.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
 using System.Text.RegularExpressions;
 
 namespace CategoryApi.Biz.Services;
 
-public class CatalogService(IRepository<Catalog> repo, AppDbContext db) : ICatalogService
+public class CatalogService(AppDbContext db) : ICatalogService
 {
-    private readonly IRepository<Catalog> _repo = repo;
     private readonly AppDbContext _db = db;
 
     static string Slugify(string input)
@@ -39,7 +37,7 @@ public class CatalogService(IRepository<Catalog> repo, AppDbContext db) : ICatal
         var page = filter.Page <= 0 ? 1 : filter.Page;
         var size = filter.Size <= 0 ? 10 : filter.Size;
 
-        var q = _repo.Query().AsNoTracking();
+        var q = _db.Catalogs.AsNoTracking();
 
         if (filter.CategoryId.HasValue) q = q.Where(x => x.CategoryId == filter.CategoryId);
         if (!string.IsNullOrWhiteSpace(filter.Q))
@@ -49,7 +47,6 @@ public class CatalogService(IRepository<Catalog> repo, AppDbContext db) : ICatal
         }
         if (filter.MinPrice.HasValue) q = q.Where(x => x.Price >= filter.MinPrice.Value);
         if (filter.MaxPrice.HasValue) q = q.Where(x => x.Price <= filter.MaxPrice.Value);
-        if (filter.IsActive.HasValue) q = q.Where(x => x.IsActive == filter.IsActive.Value);
 
         var total = await q.CountAsync(ct);
         var items = await q.OrderBy(x => x.CategoryId).ThenBy(x => x.Name)
@@ -62,7 +59,7 @@ public class CatalogService(IRepository<Catalog> repo, AppDbContext db) : ICatal
                 Slug = x.Slug,
                 CategoryId = x.CategoryId,
                 Price = x.Price,
-                IsActive = x.IsActive, 
+                IsActive = x.IsActive,
                 ImageUrl = x.ImageUrl
             }).ToListAsync(ct);
 
@@ -71,7 +68,7 @@ public class CatalogService(IRepository<Catalog> repo, AppDbContext db) : ICatal
 
     public async Task<CatalogView?> GetAsync(int id, CancellationToken ct = default)
     {
-        var x = await _repo.Query().AsNoTracking().FirstOrDefaultAsync(c => c.Id == id, ct);
+        var x = await _db.Catalogs.AsNoTracking().FirstOrDefaultAsync(c => c.Id == id, ct);
         if (x is null) return null;
         return new CatalogView
         {
@@ -83,7 +80,7 @@ public class CatalogService(IRepository<Catalog> repo, AppDbContext db) : ICatal
             Price = x.Price,
             ImageUrl = x.ImageUrl,
             Description = x.Description,
-            IsActive = x.IsActive  
+            IsActive = x.IsActive
         };
     }
 
@@ -106,17 +103,19 @@ public class CatalogService(IRepository<Catalog> repo, AppDbContext db) : ICatal
             Price = m.Price,
             ImageUrl = string.IsNullOrWhiteSpace(m.ImageUrl) ? null : m.ImageUrl.Trim(),
             Description = m.Description,
-            IsActive = m.IsActive,      
-            CreatedAt = DateTime.UtcNow 
+            IsActive = m.IsActive,
+            CreatedAt = DateTime.UtcNow
         };
-        await _repo.AddAsync(e, ct);
-        await _repo.SaveChangesAsync(ct);
+
+        _db.Catalogs.Add(e);
+        await _db.SaveChangesAsync(ct);
         return e.Id;
     }
 
     public async Task UpdateAsync(int id, CatalogEdit m, CancellationToken ct = default)
     {
-        var e = await _repo.GetByIdAsync(id, ct) ?? throw new KeyNotFoundException($"Catalog {id} not found");
+        var e = await _db.Catalogs.FirstOrDefaultAsync(x => x.Id == id, ct)
+            ?? throw new KeyNotFoundException($"Catalog {id} not found");
 
         if (!await _db.Categories.AnyAsync(c => c.Id == m.CategoryId, ct))
             throw new KeyNotFoundException($"Category {m.CategoryId} not found");
@@ -128,24 +127,23 @@ public class CatalogService(IRepository<Catalog> repo, AppDbContext db) : ICatal
         e.Code = m.Code;
         e.CategoryId = m.CategoryId;
         e.Price = m.Price;
-        e.ImageUrl =string.IsNullOrWhiteSpace(m.ImageUrl) ? null : m.ImageUrl.Trim();
+        e.ImageUrl = string.IsNullOrWhiteSpace(m.ImageUrl) ? null : m.ImageUrl.Trim();
         e.Description = m.Description;
-        e.IsActive = m.IsActive;          
-        e.UpdatedAt = DateTime.UtcNow;  
+        e.IsActive = m.IsActive;
+        e.UpdatedAt = DateTime.UtcNow;
 
         var newSlug = Slugify(m.Name);
         if (!string.Equals(newSlug, e.Slug, StringComparison.OrdinalIgnoreCase))
             e.Slug = await EnsureUniqueSlugAsync(newSlug, e.CategoryId, e.Id, ct);
 
-        _repo.Update(e);
-        await _repo.SaveChangesAsync(ct);
+        await _db.SaveChangesAsync(ct);
     }
 
     public async Task DeleteAsync(int id, CancellationToken ct = default)
     {
-        var e = await _repo.GetByIdAsync(id, ct);
+        var e = await _db.Catalogs.FindAsync(new object[] { id }, ct);
         if (e is null) return;
-        _repo.Remove(e);
-        await _repo.SaveChangesAsync(ct);
+        _db.Catalogs.Remove(e);
+        await _db.SaveChangesAsync(ct);
     }
 }

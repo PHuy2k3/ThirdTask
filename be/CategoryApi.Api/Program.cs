@@ -1,7 +1,5 @@
 ﻿using CategoryApi.Biz.Services;
 using CategoryApi.Data;
-using CategoryApi.Data.Repositories;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,22 +16,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var provider = (builder.Configuration["DbProvider"] ?? "SqlServer").ToLowerInvariant();
-var cs = builder.Configuration.GetConnectionString("DefaultConnection")
-         ?? throw new InvalidOperationException("Missing ConnectionStrings:DefaultConnection");
-
-builder.Services.AddDbContext<AppDbContext>(opt =>
-{
-    if (provider == "mysql")
-        opt.UseMySql(cs, ServerVersion.AutoDetect(cs));
-    else
-        opt.UseSqlServer(cs);
-});
-
-builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
+builder.Services.AddData(builder.Configuration);
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICatalogService, CatalogService>();
-builder.Services.AddAutoMapper(typeof(CategoryApi.Biz.Mapping.CategoryProfile).Assembly);
 
 var app = builder.Build();
 

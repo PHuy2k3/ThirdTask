@@ -1,21 +1,18 @@
 ﻿using CategoryApi.Biz.Model;
 using CategoryApi.Biz.Model.Categories;
-using CategoryApi.Common;
 using CategoryApi.Data;
 using CategoryApi.Data.Model.Entities;
-using CategoryApi.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
 namespace CategoryApi.Biz.Services;
 
-public class CategoryService(IRepository<Category> repo, AppDbContext db): ICategoryService
+public class CategoryService(AppDbContext db) : ICategoryService
 {
-    private readonly IRepository<Category> _repo = repo;
     private readonly AppDbContext _db = db;
-    private static string Slugify(string input)
+
+    static string Slugify(string input)
     {
         input ??= "";
         var s = input.Trim().ToLowerInvariant();
@@ -24,13 +21,13 @@ public class CategoryService(IRepository<Category> repo, AppDbContext db): ICate
         s = Regex.Replace(s, @"[^a-z0-9\s-]", "");
         s = Regex.Replace(s, @"\s+", "-");
         s = Regex.Replace(s, "-{2,}", "-").Trim('-');
-        return string.IsNullOrWhiteSpace(s) ? "cat" : s;
+        return string.IsNullOrWhiteSpace(s) ? "category" : s;
     }
-    private async Task<string> EnsureUniqueSlugAsync(string slug, int? parentId, int? excludeId = null, CancellationToken ct = default)
+
+    async Task<string> EnsureUniqueSlugAsync(string slug, int? excludeId = null, CancellationToken ct = default)
     {
-        var baseSlug = slug;
-        int i = 1;
-        while (await _db.Categories.AnyAsync(x => x.ParentId == parentId && x.Slug == slug && x.Id != excludeId, ct))
+        var baseSlug = slug; int i = 1;
+        while (await _db.Categories.AnyAsync(x => x.Slug == slug && x.Id != excludeId, ct))
             slug = $"{baseSlug}-{++i}";
         return slug;
     }
@@ -38,33 +35,37 @@ public class CategoryService(IRepository<Category> repo, AppDbContext db): ICate
     public async Task<PagedResult<CategoryList>> ListAsync(CategoryFilter filter, CancellationToken ct = default)
     {
         var page = filter.Page <= 0 ? 1 : filter.Page;
-        var size = filter.Size <= 0 ? 10 :filter.Size;
-        var q = _repo.Query().AsNoTracking();
+        var size = filter.Size <= 0 ? 10 : filter.Size;
 
-        if(filter.ParentId.HasValue) q = q.Where(x => x.ParentId == filter.ParentId);
+        var q = _db.Categories.AsNoTracking();
+
         if (!string.IsNullOrWhiteSpace(filter.Q))
         {
             var k = filter.Q.Trim();
             q = q.Where(x => x.Name.Contains(k) || x.Slug.Contains(k));
         }
+        if (filter.ParentId.HasValue)
+            q = q.Where(x => x.ParentId == filter.ParentId);
+
         var total = await q.CountAsync(ct);
-        var items = await q.OrderBy(x => x.ParentId).ThenBy(x => x.SortOrder).ThenBy(x => x.Id)
+        var items = await q.OrderBy(x => x.SortOrder).ThenBy(x => x.Name)
             .Skip((page - 1) * size).Take(size)
             .Select(x => new CategoryList
             {
-                Id = x.Id, 
-                Name = x.Name, 
+                Id = x.Id,
+                Name = x.Name,
                 Slug = x.Slug,
-                ParentId = x.ParentId, 
+                ParentId = x.ParentId,
                 SortOrder = x.SortOrder,
                 IsActive = x.IsActive
             }).ToListAsync(ct);
+
         return new PagedResult<CategoryList>(page, size, total, items);
     }
 
     public async Task<CategoryView?> GetAsync(int id, CancellationToken ct = default)
     {
-        var x = await _repo.Query().AsNoTracking().FirstOrDefaultAsync(c => c.Id == id, ct);
+        var x = await _db.Categories.AsNoTracking().FirstOrDefaultAsync(c => c.Id == id, ct);
         if (x is null) return null;
         return new CategoryView
         {
@@ -77,43 +78,48 @@ public class CategoryService(IRepository<Category> repo, AppDbContext db): ICate
         };
     }
 
-    public async Task<int> CreateAsync(CategoryNew model, CancellationToken ct = default)
+    public async Task<int> CreateAsync(CategoryNew m, CancellationToken ct = default)
     {
-        var slug = await EnsureUniqueSlugAsync(Slugify(model.Name), model.ParentId, null, ct);
+        var slug = await EnsureUniqueSlugAsync(Slugify(m.Name), null, ct);
+
         var e = new Category
         {
-            Name = model.Name,
+            Name = m.Name,
             Slug = slug,
-            ParentId = model.ParentId,
-            SortOrder = model.SortOrder,
-            IsActive= model.IsActive
+            ParentId = m.ParentId,
+            SortOrder = m.SortOrder,
+            IsActive = m.IsActive,
+            CreatedAt = DateTime.UtcNow
         };
-        await _repo.AddAsync(e, ct);
-        await _repo.SaveChangesAsync(ct);
+
+        _db.Categories.Add(e);
+        await _db.SaveChangesAsync(ct);
         return e.Id;
     }
 
-    public async Task UpdateAsync(int id, CategoryEdit model, CancellationToken ct = default)
+    public async Task UpdateAsync(int id, CategoryEdit m, CancellationToken ct = default)
     {
-        var e = await _repo.GetByIdAsync(id, ct) ?? throw new KeyNotFoundException($"Category {id} not found");
-        e.Name = model.Name; e.ParentId = model.ParentId; e.SortOrder = model.SortOrder;
-        e.IsActive = model.IsActive;
+        var e = await _db.Categories.FirstOrDefaultAsync(x => x.Id == id, ct)
+            ?? throw new KeyNotFoundException($"Category {id} not found");
 
-        var newSlug = Slugify(model.Name);
+        e.Name = m.Name;
+        e.ParentId = m.ParentId;
+        e.SortOrder = m.SortOrder;
+        e.IsActive = m.IsActive;
+        e.UpdatedAt = DateTime.UtcNow;
+
+        var newSlug = Slugify(m.Name);
         if (!string.Equals(newSlug, e.Slug, StringComparison.OrdinalIgnoreCase))
-            e.Slug = await EnsureUniqueSlugAsync(newSlug, e.ParentId, e.Id, ct);
+            e.Slug = await EnsureUniqueSlugAsync(newSlug, e.Id, ct);
 
-        _repo.Update(e);
-        await _repo.SaveChangesAsync(ct);
+        await _db.SaveChangesAsync(ct);
     }
 
     public async Task DeleteAsync(int id, CancellationToken ct = default)
     {
-        var hasChildren = await _db.Categories.AnyAsync(x => x.ParentId == id, ct);
-        if (hasChildren) throw new InvalidOperationException("Không thể xoá do còn danh mục con.");
-        var e = await _repo.GetByIdAsync(id, ct);
+        var e = await _db.Categories.FindAsync(new object[] { id }, ct);
         if (e is null) return;
-        _repo.Remove(e);
-        await _repo.SaveChangesAsync(ct);
+        _db.Categories.Remove(e);
+        await _db.SaveChangesAsync(ct);
     }
 }
