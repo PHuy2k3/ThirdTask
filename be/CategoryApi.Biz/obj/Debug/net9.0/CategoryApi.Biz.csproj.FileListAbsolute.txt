@@ -19,4 +19,3 @@ D:\CMC_Task\third-task\be\CategoryApi.Biz\obj\Debug\net9.0\CategoryApi.Biz.dll
 D:\CMC_Task\third-task\be\CategoryApi.Biz\obj\Debug\net9.0\refint\CategoryApi.Biz.dll
 D:\CMC_Task\third-task\be\CategoryApi.Biz\obj\Debug\net9.0\CategoryApi.Biz.pdb
 D:\CMC_Task\third-task\be\CategoryApi.Biz\obj\Debug\net9.0\ref\CategoryApi.Biz.dll
-D:\CMC_Task\third-task\be\CategoryApi.Biz\obj\Debug\net9.0\CategoryApi.Biz.sourcelink.json

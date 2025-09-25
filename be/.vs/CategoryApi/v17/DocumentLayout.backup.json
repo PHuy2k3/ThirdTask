@@ -3,60 +3,72 @@
   "WorkspaceRootPath": "D:\\CMC_Task\\third-task\\be\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|solutionrelative:categoryapi.data\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|solutionrelative:categoryapi.data\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz\\mapping\\categoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|solutionrelative:categoryapi.biz\\mapping\\categoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz\\mapping\\catalogprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|solutionrelative:categoryapi.biz\\mapping\\catalogprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data\\mapping\\catalogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|solutionrelative:categoryapi.data\\mapping\\catalogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data\\mapping\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|solutionrelative:categoryapi.data\\mapping\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz\\services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|solutionrelative:categoryapi.biz\\services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D86807-79E8-4EAB-A741-173CCF273DFC}|CategoryApi.Api\\CategoryApi.Api.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.api\\controllers\\catalogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D86807-79E8-4EAB-A741-173CCF273DFC}|CategoryApi.Api\\CategoryApi.Api.csproj|solutionrelative:categoryapi.api\\controllers\\catalogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91D86807-79E8-4EAB-A741-173CCF273DFC}|CategoryApi.Api\\CategoryApi.Api.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91D86807-79E8-4EAB-A741-173CCF273DFC}|CategoryApi.Api\\CategoryApi.Api.csproj|solutionrelative:categoryapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|solutionrelative:categoryapi.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91D86807-79E8-4EAB-A741-173CCF273DFC}|CategoryApi.Api\\CategoryApi.Api.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.api\\controllers\\catalogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D86807-79E8-4EAB-A741-173CCF273DFC}|CategoryApi.Api\\CategoryApi.Api.csproj|solutionrelative:categoryapi.api\\controllers\\catalogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|solutionrelative:categoryapi.biz\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91D86807-79E8-4EAB-A741-173CCF273DFC}|CategoryApi.Api\\CategoryApi.Api.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D86807-79E8-4EAB-A741-173CCF273DFC}|CategoryApi.Api\\CategoryApi.Api.csproj|solutionrelative:categoryapi.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz\\services\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|solutionrelative:categoryapi.biz\\services\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz\\mapping\\catalogprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|solutionrelative:categoryapi.biz\\mapping\\catalogprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C245E41F-DB36-4C96-967A-4084B6192A5C}|CategoryApi.Biz.Model\\CategoryApi.Biz.Model.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz.model\\catalogs\\catalogdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C245E41F-DB36-4C96-967A-4084B6192A5C}|CategoryApi.Biz.Model\\CategoryApi.Biz.Model.csproj|solutionrelative:categoryapi.biz.model\\catalogs\\catalogdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{786F3456-B32D-4C70-8381-C56C863D6B11}|CategoryApi.Data.Model\\CategoryApi.Data.Model.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data.model\\entities\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786F3456-B32D-4C70-8381-C56C863D6B11}|CategoryApi.Data.Model\\CategoryApi.Data.Model.csproj|solutionrelative:categoryapi.data.model\\entities\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|solutionrelative:categoryapi.biz\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C245E41F-DB36-4C96-967A-4084B6192A5C}|CategoryApi.Biz.Model\\CategoryApi.Biz.Model.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz.model\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C245E41F-DB36-4C96-967A-4084B6192A5C}|CategoryApi.Biz.Model\\CategoryApi.Biz.Model.csproj|solutionrelative:categoryapi.biz.model\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C245E41F-DB36-4C96-967A-4084B6192A5C}|CategoryApi.Biz.Model\\CategoryApi.Biz.Model.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz.model\\categories\\categorydtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C245E41F-DB36-4C96-967A-4084B6192A5C}|CategoryApi.Biz.Model\\CategoryApi.Biz.Model.csproj|solutionrelative:categoryapi.biz.model\\categories\\categorydtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data\\config\\catalogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|solutionrelative:categoryapi.data\\config\\catalogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data\\config\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|solutionrelative:categoryapi.data\\config\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{786F3456-B32D-4C70-8381-C56C863D6B11}|CategoryApi.Data.Model\\CategoryApi.Data.Model.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data.model\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{786F3456-B32D-4C70-8381-C56C863D6B11}|CategoryApi.Data.Model\\CategoryApi.Data.Model.csproj|solutionrelative:categoryapi.data.model\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786F3456-B32D-4C70-8381-C56C863D6B11}|CategoryApi.Data.Model\\CategoryApi.Data.Model.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data.model\\entities\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786F3456-B32D-4C70-8381-C56C863D6B11}|CategoryApi.Data.Model\\CategoryApi.Data.Model.csproj|solutionrelative:categoryapi.data.model\\entities\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|solutionrelative:categoryapi.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7A89976-9E79-447F-8DB6-2B46295F089A}|CategoryApi.Data\\CategoryApi.Data.csproj|solutionrelative:categoryapi.data\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|d:\\cmc_task\\third-task\\be\\categoryapi.biz\\mapping\\categoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F771C3F8-E730-44BF-A3C1-335562A3C775}|CategoryApi.Biz\\CategoryApi.Biz.csproj|solutionrelative:categoryapi.biz\\mapping\\categoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,152 +90,153 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryProfile.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Mapping\\CategoryProfile.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Biz\\Mapping\\CategoryProfile.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Mapping\\CategoryProfile.cs",
-              "RelativeToolTip": "CategoryApi.Biz\\Mapping\\CategoryProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T09:46:09.386Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CatalogProfile.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Mapping\\CatalogProfile.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Biz\\Mapping\\CatalogProfile.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Mapping\\CatalogProfile.cs",
-              "RelativeToolTip": "CategoryApi.Biz\\Mapping\\CatalogProfile.cs",
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Api\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "CategoryApi.Api\\Controllers\\CategoriesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T09:46:08.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CatalogConfiguration.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Mapping\\CatalogConfiguration.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Data\\Mapping\\CatalogConfiguration.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Mapping\\CatalogConfiguration.cs",
-              "RelativeToolTip": "CategoryApi.Data\\Mapping\\CatalogConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T09:40:28.371Z"
+              "WhenOpened": "2025-09-23T09:18:33.106Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CatalogsController.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Controllers\\CatalogsController.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Api\\Controllers\\CatalogsController.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Controllers\\CatalogsController.cs",
-              "RelativeToolTip": "CategoryApi.Api\\Controllers\\CatalogsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T09:43:10.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryConfiguration.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Mapping\\CategoryConfiguration.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Data\\Mapping\\CategoryConfiguration.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Mapping\\CategoryConfiguration.cs",
-              "RelativeToolTip": "CategoryApi.Data\\Mapping\\CategoryConfiguration.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T09:42:49.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Repositories\\IRepository.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Data\\Repositories\\IRepository.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Repositories\\IRepository.cs",
-              "RelativeToolTip": "CategoryApi.Data\\Repositories\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T07:02:31.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EfRepository.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Repositories\\EfRepository.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Data\\Repositories\\EfRepository.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Repositories\\EfRepository.cs",
-              "RelativeToolTip": "CategoryApi.Data\\Repositories\\EfRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T07:02:13.991Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Program.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Api\\Program.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Program.cs",
-              "RelativeToolTip": "CategoryApi.Api\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T07:10:21.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Services\\CategoryService.cs",
               "RelativeDocumentMoniker": "CategoryApi.Biz\\Services\\CategoryService.cs",
               "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Services\\CategoryService.cs",
               "RelativeToolTip": "CategoryApi.Biz\\Services\\CategoryService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-17T08:33:34.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "CatalogService.cs",
               "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Services\\CatalogService.cs",
               "RelativeDocumentMoniker": "CategoryApi.Biz\\Services\\CatalogService.cs",
               "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Services\\CatalogService.cs",
               "RelativeToolTip": "CategoryApi.Biz\\Services\\CatalogService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T02:24:51.085Z"
+              "WhenOpened": "2025-09-17T02:24:51.085Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
+              "Title": "ICatalogService.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Services\\ICatalogService.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Biz\\Services\\ICatalogService.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Services\\ICatalogService.cs",
+              "RelativeToolTip": "CategoryApi.Biz\\Services\\ICatalogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T02:02:52.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CatalogProfile.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Mapping\\CatalogProfile.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Biz\\Mapping\\CatalogProfile.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Mapping\\CatalogProfile.cs",
+              "RelativeToolTip": "CategoryApi.Biz\\Mapping\\CatalogProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:46:08.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CatalogsController.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Controllers\\CatalogsController.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Api\\Controllers\\CatalogsController.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Controllers\\CatalogsController.cs",
+              "RelativeToolTip": "CategoryApi.Api\\Controllers\\CatalogsController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:43:10.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Program.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Api\\Program.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Api\\Program.cs",
+              "RelativeToolTip": "CategoryApi.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T07:10:21.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CatalogDtos.cs",
               "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz.Model\\Catalogs\\CatalogDtos.cs",
               "RelativeDocumentMoniker": "CategoryApi.Biz.Model\\Catalogs\\CatalogDtos.cs",
               "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz.Model\\Catalogs\\CatalogDtos.cs",
               "RelativeToolTip": "CategoryApi.Biz.Model\\Catalogs\\CatalogDtos.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA2wDwAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAIA1wCcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-17T02:24:07.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Data\\AppDbContext.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\AppDbContext.cs",
-              "RelativeToolTip": "CategoryApi.Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBcAAAA7AAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz.Model\\PagedResult.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Biz.Model\\PagedResult.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz.Model\\PagedResult.cs",
+              "RelativeToolTip": "CategoryApi.Biz.Model\\PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T02:23:05.324Z"
+              "WhenOpened": "2025-09-22T08:06:27.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryDtos.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz.Model\\Categories\\CategoryDtos.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Biz.Model\\Categories\\CategoryDtos.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz.Model\\Categories\\CategoryDtos.cs",
+              "RelativeToolTip": "CategoryApi.Biz.Model\\Categories\\CategoryDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T08:03:23.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CatalogConfiguration.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Config\\CatalogConfiguration.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Data\\Config\\CatalogConfiguration.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Config\\CatalogConfiguration.cs",
+              "RelativeToolTip": "CategoryApi.Data\\Config\\CatalogConfiguration.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:40:28.371Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data.Model\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Data.Model\\Entities\\Category.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data.Model\\Entities\\Category.cs",
+              "RelativeToolTip": "CategoryApi.Data.Model\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T02:22:36.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Catalog.cs",
               "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data.Model\\Entities\\Catalog.cs",
               "RelativeDocumentMoniker": "CategoryApi.Data.Model\\Entities\\Catalog.cs",
@@ -235,15 +248,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data.Model\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "CategoryApi.Data.Model\\Entities\\Category.cs",
-              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data.Model\\Entities\\Category.cs",
-              "RelativeToolTip": "CategoryApi.Data.Model\\Entities\\Category.cs",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Data\\AppDbContext.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\AppDbContext.cs",
+              "RelativeToolTip": "CategoryApi.Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T02:23:05.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Data\\DependencyInjection.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\DependencyInjection.cs",
+              "RelativeToolTip": "CategoryApi.Data\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T03:04:14.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryConfiguration.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Config\\CategoryConfiguration.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Data\\Config\\CategoryConfiguration.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Data\\Config\\CategoryConfiguration.cs",
+              "RelativeToolTip": "CategoryApi.Data\\Config\\CategoryConfiguration.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:42:49.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoryProfile.cs",
+              "DocumentMoniker": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Mapping\\CategoryProfile.cs",
+              "RelativeDocumentMoniker": "CategoryApi.Biz\\Mapping\\CategoryProfile.cs",
+              "ToolTip": "D:\\CMC_Task\\third-task\\be\\CategoryApi.Biz\\Mapping\\CategoryProfile.cs",
+              "RelativeToolTip": "CategoryApi.Biz\\Mapping\\CategoryProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T02:22:36.39Z"
+              "WhenOpened": "2025-09-18T09:46:09.386Z"
             }
           ]
         }

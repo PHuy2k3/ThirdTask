@@ -1,5 +1,5 @@
-﻿using CategoryApi.Biz.Services;
-using CategoryApi.Data;
+﻿using CategoryApi.Data;
+using CategoryApi.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,8 +17,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddData(builder.Configuration);
-builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<ICatalogService, CatalogService>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICatalogRepository, CatalogRepository>();
 
 var app = builder.Build();
 
