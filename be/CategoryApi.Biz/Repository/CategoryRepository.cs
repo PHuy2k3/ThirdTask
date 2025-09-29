@@ -1,5 +1,4 @@
-﻿// CategoryApi.Data/Repositories/CategoryRepository.cs
-using CategoryApi.Data.Model.Entities;
+﻿using CategoryApi.Data.Model.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CategoryApi.Data.Repositories;
@@ -10,7 +9,7 @@ public sealed class CategoryRepository(AppDbContext db) : ICategoryRepository
         => db.Categories.AsNoTracking();
 
     public Task<Category?> FindAsync(int id, CancellationToken ct = default)
-        => db.Categories.FirstOrDefaultAsync(x => x.Id == id, ct); // tracked
+        => db.Categories.FirstOrDefaultAsync(x => x.Id == id, ct);
 
     public Task<bool> ExistsAsync(int id, CancellationToken ct = default)
         => db.Categories.AnyAsync(x => x.Id == id, ct);

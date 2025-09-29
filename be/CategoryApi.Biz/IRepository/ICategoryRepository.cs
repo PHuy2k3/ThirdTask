@@ -1,12 +1,11 @@
-﻿// CategoryApi.Data/Repositories/ICategoryRepository.cs
-using CategoryApi.Data.Model.Entities;
+﻿using CategoryApi.Data.Model.Entities;
 
 namespace CategoryApi.Data.Repositories;
 
 public interface ICategoryRepository
 {
-    IQueryable<Category> Query(); // AsNoTracking cho list
-    Task<Category?> FindAsync(int id, CancellationToken ct = default); // tracked cho update/delete
+    IQueryable<Category> Query(); 
+    Task<Category?> FindAsync(int id, CancellationToken ct = default); 
     Task<bool> ExistsAsync(int id, CancellationToken ct = default);
     Task<bool> HasChildrenAsync(int id, CancellationToken ct = default);
     Task<bool> InUseByCatalogsAsync(int id, CancellationToken ct = default);

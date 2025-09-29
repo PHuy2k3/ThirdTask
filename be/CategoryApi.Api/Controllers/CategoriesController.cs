@@ -1,5 +1,4 @@
-﻿// CategoryApi.Api/Controllers/CategoriesController.cs
-using CategoryApi.Biz.Model;
+﻿using CategoryApi.Biz.Model;
 using CategoryApi.Biz.Model.Categories;
 using CategoryApi.Data.Model.Entities;
 using CategoryApi.Data.Repositories;
@@ -14,18 +13,17 @@ namespace CategoryApi.Api.Controllers;
 [Route("api/[controller]")]
 public class CategoriesController(ICategoryRepository repo) : ControllerBase
 {
-    // Helpers
     static string Slugify(string? input)
     {
         var s = (input ?? "").Trim().ToLowerInvariant();
-        s = s.Replace('đ', 'd').Replace('Đ', 'D');          // tiếng Việt
+        s = s.Replace('đ', 'd').Replace('Đ', 'D');
         s = s.Normalize(NormalizationForm.FormD);
         s = Regex.Replace(s, @"\p{IsCombiningDiacriticalMarks}+", "");
         s = Regex.Replace(s, @"[^a-z0-9\s-]", "");
         s = Regex.Replace(s, @"\s+", "-");
         s = Regex.Replace(s, "-{2,}", "-").Trim('-');
         if (string.IsNullOrWhiteSpace(s)) s = "category";
-        return s.Length <= 220 ? s : s[..220];            // khớp max length cột Slug
+        return s.Length <= 220 ? s : s[..220];          
     }
 
     async Task<string> EnsureUniqueSlugAsync(string rawSlug, int? parentId, int? excludeId, CancellationToken ct)
@@ -41,7 +39,6 @@ public class CategoriesController(ICategoryRepository repo) : ControllerBase
         return slug;
     }
 
-    // GET /api/categories
     [HttpGet]
     public async Task<PagedResult<CategoryList>> List([FromQuery] CategoryFilter filter, CancellationToken ct)
     {
@@ -74,7 +71,6 @@ public class CategoriesController(ICategoryRepository repo) : ControllerBase
         return new(page, size, total, items);
     }
 
-    // GET /api/categories/{id}
     [HttpGet("{id:int}")]
     public async Task<ActionResult<CategoryView>> Get(int id, CancellationToken ct)
     {
@@ -92,7 +88,6 @@ public class CategoriesController(ICategoryRepository repo) : ControllerBase
         };
     }
 
-    // POST /api/categories
     [HttpPost]
     public async Task<ActionResult<int>> Create(CategoryNew model, CancellationToken ct)
     {
@@ -116,7 +111,6 @@ public class CategoriesController(ICategoryRepository repo) : ControllerBase
         return CreatedAtAction(nameof(Get), new { id = e.Id }, e.Id);
     }
 
-    // PUT /api/categories/{id}
     [HttpPut("{id:int}")]
     public async Task<IActionResult> Update(int id, CategoryEdit model, CancellationToken ct)
     {
@@ -141,12 +135,11 @@ public class CategoriesController(ICategoryRepository repo) : ControllerBase
         return NoContent();
     }
 
-    // DELETE /api/categories/{id}
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> Delete(int id, CancellationToken ct)
     {
         var e = await repo.FindAsync(id, ct);
-        if (e is null) return NoContent(); // idempotent
+        if (e is null) return NoContent();
 
         if (await repo.HasChildrenAsync(id, ct))
             return Conflict("Không thể xoá: đang có category con.");

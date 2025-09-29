@@ -18,7 +18,7 @@ public class CatalogsController(ICatalogRepository repo) : ControllerBase
     static string Slugify(string? input)
     {
         var s = (input ?? "").Trim().ToLowerInvariant();
-        s = s.Replace('đ', 'd').Replace('Đ', 'D'); // tiếng Việt
+        s = s.Replace('đ', 'd').Replace('Đ', 'D'); 
         s = s.Normalize(NormalizationForm.FormD);
         s = Regex.Replace(s, @"\p{IsCombiningDiacriticalMarks}+", "");
         s = Regex.Replace(s, @"[^a-z0-9\s-]", "");

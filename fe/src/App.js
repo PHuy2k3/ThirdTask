@@ -55,11 +55,11 @@ return (
 
     <Card className="card-rounded shadow-soft">
       <Routes>
-      <Route path="/" element={<Navigate to="/combined" replace />} />
-      <Route path="/categories" element={<CategoriesPage baseUrl={baseUrl} onToast={onToast} />} />
-      <Route path="/catalogs" element={<CatalogsPage baseUrl={baseUrl} onToast={onToast} />} />
-      <Route path="/combined" element={<CategoryCatalogPage baseUrl={baseUrl} onToast={onToast} />} />
-      <Route path="*" element={<div className="p-4 text-600">Không tìm thấy trang.</div>} />
+        <Route path="/" element={<Navigate to="/combined" replace />} />
+        <Route path="/categories" element={<CategoriesPage baseUrl={baseUrl} onToast={onToast} />} />
+        <Route path="/catalogs" element={<CatalogsPage baseUrl={baseUrl} onToast={onToast} />} />
+        <Route path="/combined" element={<CategoryCatalogPage baseUrl={baseUrl} onToast={onToast} />} />
+        <Route path="*" element={<div className="p-4 text-600">Không tìm thấy trang.</div>} />
       </Routes>
     </Card>
   </div>
